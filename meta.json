@@ -1,0 +1,9 @@
+{
+	"name":"dotfiles",
+	"work-location": "dotfiles",
+	"dest-location": ".",
+	"controls": {"behaviour": {"options":"output"}},
+	"files":{
+		".vimrc":{}
+	}
+}
