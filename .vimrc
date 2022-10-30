@@ -19,6 +19,23 @@ set signcolumn=yes
 set colorcolumn=81
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+set matchpairs+=<:>
+
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'morhetz/gruvbox'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'stsewd/fzf-checkout.vim'
+call plug#end()
+
+colorscheme gruvbox
+set background=dark
+highlight Normal guibg=NONE ctermbg=NONE
+"let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
+let $FZF_DEFAULT_OPTS='--reverse'
+
 let mapleader = " "
 nnoremap <silent> <Leader>f :Files<CR>
 nnoremap <Leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 40<CR>

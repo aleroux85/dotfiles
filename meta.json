@@ -1,9 +1,13 @@
 {
 	"name":"dotfiles",
-	"work-location": "dotfiles",
-	"dest-location": ".",
-	"controls": {"behaviour": {"options":"output"}},
+	"options":"output",
+	"orig":"dotfiles",
 	"files":{
 		".vimrc":{}
+	},
+	"execs":{
+		"install-vim-plugins":{
+			"cmd":["vim", "+'PlugInstall --sync'", "+qa"]
+		}
 	}
 }
