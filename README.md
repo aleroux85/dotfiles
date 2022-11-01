@@ -1,6 +1,6 @@
 # dotfiles
 
-This is my dotfiles that I use in Ubuntu.
+This is the dotfiles that I use in Ubuntu.
 
 ## Whats in the box
 
@@ -14,6 +14,13 @@ This is my dotfiles that I use in Ubuntu.
 
 Enables using fuzzy searching for ctrl-r and ctrl-t in the command line.
 With ripgrep one can do `rg --files | fzf`.
+
+## Requirements
+
+- [Ubuntu]
+- [Go](https://go.dev/) (optional)
+- [Meta](https://github.com/oligoden/meta) (optional)
+- [Graphviz](https://graphviz.org/) (optional)
 
 ## Setup
 
@@ -50,3 +57,23 @@ Finally installing tmux.
 ```bash
     sudo apt-get install -y tmux
 ```
+
+## Manually installing dotfiles
+
+Copy:
+
+- `.vimrc`
+
+file to your home directory. Open vim and run:
+
+```vim
+    :PlugInstall
+```
+
+inside vim or run:
+
+```bash
+    vim +'PlugInstall --sync' +qa
+```
+
+from the terminal outside vim.

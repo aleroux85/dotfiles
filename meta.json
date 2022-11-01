@@ -4,10 +4,5 @@
 	"orig":"dotfiles",
 	"files":{
 		".vimrc":{}
-	},
-	"execs":{
-		"install-vim-plugins":{
-			"cmd":["vim", "+'PlugInstall --sync'", "+qa"]
-		}
 	}
 }
