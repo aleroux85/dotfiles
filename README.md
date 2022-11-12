@@ -76,4 +76,5 @@ inside vim or run:
     vim +'PlugInstall --sync' +qa
 ```
 
-from the terminal outside vim.
+or from the terminal outside vim.
+

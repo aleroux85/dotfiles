@@ -3,6 +3,7 @@
 	"options":"output",
 	"orig":"dotfiles",
 	"files":{
-		".vimrc":{}
+		".vimrc":{},
+		".tmux.conf":{}
 	}
 }
